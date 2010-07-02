@@ -1,0 +1,303 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* ImageLocaterAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* ImageLocaterAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
+		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		CC21CC8111D75BFD0050D21B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC21CC8011D75BFD0050D21B /* CoreLocation.framework */; };
+		CC21CC8511D75C070050D21B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC21CC8411D75C070050D21B /* MapKit.framework */; };
+		CC21CC8D11D75C6A0050D21B /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC21CC8B11D75C6A0050D21B /* LoginController.m */; };
+		CC21CC8E11D75C6A0050D21B /* LoginController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC21CC8C11D75C6A0050D21B /* LoginController.xib */; };
+		CC21CCB411D769DC0050D21B /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC21CCB211D769DC0050D21B /* MapViewController.m */; };
+		CC21CCB511D769DC0050D21B /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC21CCB311D769DC0050D21B /* MapViewController.xib */; };
+		CC21CD3611D77FB20050D21B /* MainController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC21CD3411D77FB20050D21B /* MainController.xib */; };
+		CC21CD4111D7814D0050D21B /* SFAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = CC21CD3E11D7814D0050D21B /* SFAnnotation.m */; };
+		CC21CD4211D7814D0050D21B /* BridgeAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = CC21CD4011D7814D0050D21B /* BridgeAnnotation.m */; };
+		CC74427F11DA1AAE00CA31E1 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC74427D11DA1AAE00CA31E1 /* ImageViewController.m */; };
+		CC74428011DA1AAE00CA31E1 /* ImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC74427E11DA1AAE00CA31E1 /* ImageViewController.xib */; };
+		CC8033AD11D812CC00CFEE82 /* MainController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC8033AC11D812CC00CFEE82 /* MainController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* ImageLocaterAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageLocaterAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* ImageLocaterAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageLocaterAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* ImageLocater.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageLocater.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* ImageLocater_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageLocater_Prefix.pch; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* ImageLocater-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ImageLocater-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		CC21CC8011D75BFD0050D21B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		CC21CC8411D75C070050D21B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		CC21CC8A11D75C6A0050D21B /* LoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginController.h; sourceTree = "<group>"; };
+		CC21CC8B11D75C6A0050D21B /* LoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginController.m; sourceTree = "<group>"; };
+		CC21CC8C11D75C6A0050D21B /* LoginController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = LoginController.xib; path = Classes/LoginController.xib; sourceTree = "<group>"; };
+		CC21CCB111D769DC0050D21B /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		CC21CCB211D769DC0050D21B /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		CC21CCB311D769DC0050D21B /* MapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MapViewController.xib; path = Classes/MapViewController.xib; sourceTree = "<group>"; };
+		CC21CD3411D77FB20050D21B /* MainController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MainController.xib; path = Classes/MainController.xib; sourceTree = "<group>"; };
+		CC21CD3D11D7814D0050D21B /* SFAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SFAnnotation.h; path = ../MapCallouts/SFAnnotation.h; sourceTree = SOURCE_ROOT; };
+		CC21CD3E11D7814D0050D21B /* SFAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SFAnnotation.m; path = ../MapCallouts/SFAnnotation.m; sourceTree = SOURCE_ROOT; };
+		CC21CD3F11D7814D0050D21B /* BridgeAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BridgeAnnotation.h; path = ../MapCallouts/BridgeAnnotation.h; sourceTree = SOURCE_ROOT; };
+		CC21CD4011D7814D0050D21B /* BridgeAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BridgeAnnotation.m; path = ../MapCallouts/BridgeAnnotation.m; sourceTree = SOURCE_ROOT; };
+		CC74427C11DA1AAE00CA31E1 /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
+		CC74427D11DA1AAE00CA31E1 /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
+		CC74427E11DA1AAE00CA31E1 /* ImageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ImageViewController.xib; path = Classes/ImageViewController.xib; sourceTree = "<group>"; };
+		CC8033AB11D812CC00CFEE82 /* MainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainController.h; sourceTree = "<group>"; };
+		CC8033AC11D812CC00CFEE82 /* MainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
+				CC21CC8111D75BFD0050D21B /* CoreLocation.framework in Frameworks */,
+				CC21CC8511D75C070050D21B /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1D3623240D0F684500981E51 /* ImageLocaterAppDelegate.h */,
+				1D3623250D0F684500981E51 /* ImageLocaterAppDelegate.m */,
+				CC21CC8A11D75C6A0050D21B /* LoginController.h */,
+				CC21CC8B11D75C6A0050D21B /* LoginController.m */,
+				CC21CCB111D769DC0050D21B /* MapViewController.h */,
+				CC21CCB211D769DC0050D21B /* MapViewController.m */,
+				CC21CD3D11D7814D0050D21B /* SFAnnotation.h */,
+				CC21CD3E11D7814D0050D21B /* SFAnnotation.m */,
+				CC21CD3F11D7814D0050D21B /* BridgeAnnotation.h */,
+				CC21CD4011D7814D0050D21B /* BridgeAnnotation.m */,
+				CC8033AB11D812CC00CFEE82 /* MainController.h */,
+				CC8033AC11D812CC00CFEE82 /* MainController.m */,
+				CC74427C11DA1AAE00CA31E1 /* ImageViewController.h */,
+				CC74427D11DA1AAE00CA31E1 /* ImageViewController.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* ImageLocater.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* ImageLocater_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CC74427E11DA1AAE00CA31E1 /* ImageViewController.xib */,
+				CC21CD3411D77FB20050D21B /* MainController.xib */,
+				CC21CCB311D769DC0050D21B /* MapViewController.xib */,
+				CC21CC8C11D75C6A0050D21B /* LoginController.xib */,
+				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				8D1107310486CEB800E47090 /* ImageLocater-Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
+				CC21CC8011D75BFD0050D21B /* CoreLocation.framework */,
+				CC21CC8411D75C070050D21B /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* ImageLocater */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "ImageLocater" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ImageLocater;
+			productName = ImageLocater;
+			productReference = 1D6058910D05DD3D006BFB54 /* ImageLocater.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "ImageLocater" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* ImageLocater */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+				CC21CC8E11D75C6A0050D21B /* LoginController.xib in Resources */,
+				CC21CCB511D769DC0050D21B /* MapViewController.xib in Resources */,
+				CC21CD3611D77FB20050D21B /* MainController.xib in Resources */,
+				CC74428011DA1AAE00CA31E1 /* ImageViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* ImageLocaterAppDelegate.m in Sources */,
+				CC21CC8D11D75C6A0050D21B /* LoginController.m in Sources */,
+				CC21CCB411D769DC0050D21B /* MapViewController.m in Sources */,
+				CC21CD4111D7814D0050D21B /* SFAnnotation.m in Sources */,
+				CC21CD4211D7814D0050D21B /* BridgeAnnotation.m in Sources */,
+				CC8033AD11D812CC00CFEE82 /* MainController.m in Sources */,
+				CC74427F11DA1AAE00CA31E1 /* ImageViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ImageLocater_Prefix.pch;
+				INFOPLIST_FILE = "ImageLocater-Info.plist";
+				PRODUCT_NAME = ImageLocater;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ImageLocater_Prefix.pch;
+				INFOPLIST_FILE = "ImageLocater-Info.plist";
+				PRODUCT_NAME = ImageLocater;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.2;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.2;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "ImageLocater" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "ImageLocater" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

@@ -1,0 +1,493 @@
+TImageLocater
+v7
+r0
+t299766142.504380
+cCheck dependencies
+cProcessInfoPlistFile /Users/jiangqi/MyCode/ImageLocater/build/Debug-iphonesimulator/ImageLocater.app/Info.plist ImageLocater-Info.plist
+cCompileXIB /Users/jiangqi/MyCode/ImageLocater/MainWindow.xib
+cCompileXIB /Users/jiangqi/MyCode/ImageLocater/Classes/LoginController.xib
+cCompileXIB /Users/jiangqi/MyCode/ImageLocater/Classes/MapViewController.xib
+cCompileXIB /Users/jiangqi/MyCode/ImageLocater/Classes/MainController.xib
+cCompileXIB /Users/jiangqi/MyCode/ImageLocater/Classes/ImageViewController.xib
+cProcessPCH /var/folders/ho/ho+icBmzHSu8BcRcONVTC++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ImageLocater_Prefix-fiqpczmhekhaijaxofxxwrxxgnfn/ImageLocater_Prefix.pch.gch ImageLocater_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/Objects-normal/i386/main.o /Users/jiangqi/MyCode/ImageLocater/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/Objects-normal/i386/ImageLocaterAppDelegate.o /Users/jiangqi/MyCode/ImageLocater/Classes/ImageLocaterAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/Objects-normal/i386/LoginController.o /Users/jiangqi/MyCode/ImageLocater/Classes/LoginController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/Objects-normal/i386/MapViewController.o /Users/jiangqi/MyCode/ImageLocater/Classes/MapViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/Objects-normal/i386/SFAnnotation.o /Users/jiangqi/MyCode/ImageLocater/../MapCallouts/SFAnnotation.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/Objects-normal/i386/BridgeAnnotation.o /Users/jiangqi/MyCode/ImageLocater/../MapCallouts/BridgeAnnotation.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/Objects-normal/i386/MainController.o /Users/jiangqi/MyCode/ImageLocater/Classes/MainController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/Objects-normal/i386/ImageViewController.o /Users/jiangqi/MyCode/ImageLocater/Classes/ImageViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/jiangqi/MyCode/ImageLocater/build/Debug-iphonesimulator/ImageLocater.app/ImageLocater normal i386
+cGenerateDSYMFile /Users/jiangqi/MyCode/ImageLocater/build/Debug-iphonesimulator/ImageLocater.app.dSYM /Users/jiangqi/MyCode/ImageLocater/build/Debug-iphonesimulator/ImageLocater.app/ImageLocater
+cTouch /Users/jiangqi/MyCode/ImageLocater/build/Debug-iphonesimulator/ImageLocater.app
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk
+c000000004BD236930000000000000110
+t1272067731
+s272
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004BD1CD90000000000026F020
+t1272040848
+s2551840
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/System/Library/Frameworks/CoreLocation.framework/CoreLocation
+c000000004BD1D4D20000000000061790
+t1272042706
+s399248
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004BD1FFC200000000002A96A0
+t1272053698
+s2791072
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004BD1FF9E0000000000001355
+t1272053662
+s4949
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MapKit.h
+c000000004BD1D83E000000000000017D
+t1272043582
+s381
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/System/Library/Frameworks/MapKit.framework/MapKit
+c000000004BD1D85F0000000000185260
+t1272043615
+s1593952
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004BD20412000000000000098F
+t1272054802
+s2447
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004BD20471000000000222E640
+t1272054897
+s35841600
+
+N/Users/jiangqi/MyCode/ImageLocater/../MapCallouts/BridgeAnnotation.h
+c000000004C274A01000000000000005B
+t1277643265
+s91
+i<MapKit/MapKit.h>
+
+N/Users/jiangqi/MyCode/ImageLocater/../MapCallouts/BridgeAnnotation.m
+c000000004C274A0C000000000000020A
+t1277643276
+s522
+i"BridgeAnnotation.h"
+
+N/Users/jiangqi/MyCode/ImageLocater/../MapCallouts/SFAnnotation.h
+c000000004C2749E00000000000000132
+t1277643232
+s306
+i<MapKit/MapKit.h>
+
+N/Users/jiangqi/MyCode/ImageLocater/../MapCallouts/SFAnnotation.m
+c000000004C2749ED0000000000000206
+t1277643245
+s518
+i"SFAnnotation.h"
+
+N/Users/jiangqi/MyCode/ImageLocater/Classes/ImageLocaterAppDelegate.h
+c000000004C27E21B00000000000001D1
+t1277682203
+s465
+i<UIKit/UIKit.h>
+
+N/Users/jiangqi/MyCode/ImageLocater/Classes/ImageLocaterAppDelegate.m
+c000000004C27E2F2000000000000021E
+t1277682418
+s542
+i"ImageLocaterAppDelegate.h"
+i"MainController.h"
+
+N/Users/jiangqi/MyCode/ImageLocater/Classes/ImageViewController.h
+c000000004C2A7620000000000000021E
+t1277851168
+s542
+i<UIKit/UIKit.h>
+
+N/Users/jiangqi/MyCode/ImageLocater/Classes/ImageViewController.m
+c000000004C2B42DB0000000000000754
+t1277903579
+s1876
+i"ImageViewController.h"
+
+N/Users/jiangqi/MyCode/ImageLocater/Classes/ImageViewController.xib
+c000000004C29F7160000000000005365
+t1277818646
+s21349
+
+N/Users/jiangqi/MyCode/ImageLocater/Classes/LoginController.h
+c000000004C29D0ED00000000000001AC
+t1277808877
+s428
+i<UIKit/UIKit.h>
+
+N/Users/jiangqi/MyCode/ImageLocater/Classes/LoginController.m
+c000000004C2C9060000000000000047D
+t1277988960
+s1149
+i"LoginController.h"
+i"MainController.h"
+
+N/Users/jiangqi/MyCode/ImageLocater/Classes/LoginController.xib
+c000000004C2C8F2700000000000098D3
+t1277988647
+s39123
+
+N/Users/jiangqi/MyCode/ImageLocater/Classes/MainController.h
+c000000004C2C8D7D000000000000023C
+t1277988221
+s572
+i<UIKit/UIKit.h>
+
+N/Users/jiangqi/MyCode/ImageLocater/Classes/MainController.m
+c000000004C2C8E3A0000000000000518
+t1277988410
+s1304
+i"MainController.h"
+i"LoginController.h"
+
+N/Users/jiangqi/MyCode/ImageLocater/Classes/MainController.xib
+c000000004C29DE280000000000007452
+t1277812264
+s29778
+
+N/Users/jiangqi/MyCode/ImageLocater/Classes/MapViewController.h
+c000000004C2BCFA200000000000003D7
+t1277939618
+s983
+i<UIKit/UIKit.h>
+i<MapKit/MapKit.h>
+
+N/Users/jiangqi/MyCode/ImageLocater/Classes/MapViewController.m
+c000000004C2BD0100000000000002197
+t1277939728
+s8599
+i"MapViewController.h"
+i"SFAnnotation.h"
+i"BridgeAnnotation.h"
+i"ImageViewController.h"
+
+N/Users/jiangqi/MyCode/ImageLocater/Classes/MapViewController.xib
+c000000004C2BC60500000000000063AA
+t1277937157
+s25514
+
+N/Users/jiangqi/MyCode/ImageLocater/ImageLocater_Prefix.pch
+c000000004C27183200000000000000C1
+t1277630514
+s193
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/jiangqi/MyCode/ImageLocater/MainWindow.xib
+c000000004C29DD7B0000000000006DF6
+t1277812091
+s28150
+
+N/Users/jiangqi/MyCode/ImageLocater/build/Debug-iphonesimulator/ImageLocater.app
+t1278073021
+s340
+
+N/Users/jiangqi/MyCode/ImageLocater/build/Debug-iphonesimulator/ImageLocater.app.dSYM
+t1278073021
+s102
+
+N/Users/jiangqi/MyCode/ImageLocater/build/Debug-iphonesimulator/ImageLocater.app/ImageLocater
+t1278073021
+s46828
+
+N/Users/jiangqi/MyCode/ImageLocater/build/Debug-iphonesimulator/ImageLocater.app/ImageViewController.nib
+t1277818651
+s1088
+
+N/Users/jiangqi/MyCode/ImageLocater/build/Debug-iphonesimulator/ImageLocater.app/Info.plist
+t1277634823
+s818
+
+N/Users/jiangqi/MyCode/ImageLocater/build/Debug-iphonesimulator/ImageLocater.app/LoginController.nib
+t1277988649
+s2631
+
+N/Users/jiangqi/MyCode/ImageLocater/build/Debug-iphonesimulator/ImageLocater.app/MainController.nib
+t1277812268
+s1505
+
+N/Users/jiangqi/MyCode/ImageLocater/build/Debug-iphonesimulator/ImageLocater.app/MainWindow.nib
+t1277812104
+s1319
+
+N/Users/jiangqi/MyCode/ImageLocater/build/Debug-iphonesimulator/ImageLocater.app/MapViewController.nib
+t1277937311
+s1415
+
+N/Users/jiangqi/MyCode/ImageLocater/build/Debug-iphonesimulator/ImageLocater.app/PkgInfo
+t1277634823
+s8
+
+N/Users/jiangqi/MyCode/ImageLocater/build/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/Objects-normal/i386/BridgeAnnotation.o
+t1277643583
+s10264
+
+N/Users/jiangqi/MyCode/ImageLocater/build/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/Objects-normal/i386/ImageLocater.LinkFileList
+c000000004C29E43D0000000000000458
+t1277813821
+s1112
+
+N/Users/jiangqi/MyCode/ImageLocater/build/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/Objects-normal/i386/ImageLocaterAppDelegate.o
+t1277988415
+s45280
+
+N/Users/jiangqi/MyCode/ImageLocater/build/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/Objects-normal/i386/ImageViewController.o
+t1277903583
+s44404
+
+N/Users/jiangqi/MyCode/ImageLocater/build/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/Objects-normal/i386/LoginController.o
+t1278073020
+s38756
+
+N/Users/jiangqi/MyCode/ImageLocater/build/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/Objects-normal/i386/MainController.o
+t1277988415
+s44580
+
+N/Users/jiangqi/MyCode/ImageLocater/build/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/Objects-normal/i386/MapViewController.o
+t1277939730
+s65000
+
+N/Users/jiangqi/MyCode/ImageLocater/build/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/Objects-normal/i386/SFAnnotation.o
+t1277643583
+s14320
+
+N/Users/jiangqi/MyCode/ImageLocater/build/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/Objects-normal/i386/main.o
+t1277634825
+s6296
+
+N/Users/jiangqi/MyCode/ImageLocater/main.m
+c000000004C271832000000000000016A
+t1277630514
+s362
+i<UIKit/UIKit.h>
+
+N/Users/jiangqi/MyCode/MapCallouts/BridgeAnnotation.h
+c000000004C274A01000000000000005B
+t1277643265
+s91
+i<MapKit/MapKit.h>
+
+N/Users/jiangqi/MyCode/MapCallouts/SFAnnotation.h
+c000000004C2749E00000000000000132
+t1277643232
+s306
+i<MapKit/MapKit.h>
+
+N/var/folders/ho/ho+icBmzHSu8BcRcONVTC++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ImageLocater_Prefix-fiqpczmhekhaijaxofxxwrxxgnfn/ImageLocater_Prefix.pch.gch
+t1277634824
+s13825936
+
+NImageLocater-Info.plist
+c000000004C27183200000000000004D6
+t1277630514
+s1238
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies299766142#299766142#0(0"0(0#1#0"8603747392#0"0#
+
+CCompileC build/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/Objects-normal/i386/BridgeAnnotation.o /Users/jiangqi/MyCode/ImageLocater/../MapCallouts/BridgeAnnotation.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s299336383.053075
+e299336383.207209
+r1
+xCompileC
+xbuild/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/Objects-normal/i386/BridgeAnnotation.o
+x/Users/jiangqi/MyCode/ImageLocater/../MapCallouts/BridgeAnnotation.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@76"Compile /Users/jiangqi/MyCode/ImageLocater/../MapCallouts/BridgeAnnotation.m299336383#299336383#0(0"0(0#0#68"/Users/jiangqi/MyCode/ImageLocater/../MapCallouts/BridgeAnnotation.m8621146848#1996"    cd /Users/jiangqi/MyCode/ImageLocater    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Users/jiangqi/MyCode/ImageLocater/build/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/ImageLocater-generated-files.hmap -I/Users/jiangqi/MyCode/ImageLocater/build/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/ImageLocater-own-target-headers.hmap -I/Users/jiangqi/MyCode/ImageLocater/build/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/ImageLocater-all-target-headers.hmap -iquote /Users/jiangqi/MyCode/ImageLocater/build/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/ImageLocater-project-headers.hmap -F/Users/jiangqi/MyCode/ImageLocater/build/Debug-iphonesimulator -I/Users/jiangqi/MyCode/ImageLocater/build/Debug-iphonesimulator/include -I/Users/jiangqi/MyCode/ImageLocater/build/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/DerivedSources/i386 -I/Users/jiangqi/MyCode/ImageLocater/build/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/DerivedSources -include /var/folders/ho/ho+icBmzHSu8BcRcONVTC++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ImageLocater_Prefix-fiqpczmhekhaijaxofxxwrxxgnfn/ImageLocater_Prefix.pch -c /Users/jiangqi/MyCode/ImageLocater/../MapCallouts/BridgeAnnotation.m -o /Users/jiangqi/MyCode/ImageLocater/build/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/Objects-normal/i386/BridgeAnnotation.o0#
+
+CCompileC build/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/Objects-normal/i386/ImageLocaterAppDelegate.o /Users/jiangqi/MyCode/ImageLocater/Classes/ImageLocaterAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s299681214.926932
+e299681215.018653
+r1
+xCompileC
+xbuild/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/Objects-normal/i386/ImageLocaterAppDelegate.o
+x/Users/jiangqi/MyCode/ImageLocater/Classes/ImageLocaterAppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@76"Compile /Users/jiangqi/MyCode/ImageLocater/Classes/ImageLocaterAppDelegate.m299681214#299681215#0(0"0(0#0#68"/Users/jiangqi/MyCode/ImageLocater/Classes/ImageLocaterAppDelegate.m7597967770129099776#2003"    cd /Users/jiangqi/MyCode/ImageLocater    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Users/jiangqi/MyCode/ImageLocater/build/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/ImageLocater-generated-files.hmap -I/Users/jiangqi/MyCode/ImageLocater/build/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/ImageLocater-own-target-headers.hmap -I/Users/jiangqi/MyCode/ImageLocater/build/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/ImageLocater-all-target-headers.hmap -iquote /Users/jiangqi/MyCode/ImageLocater/build/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/ImageLocater-project-headers.hmap -F/Users/jiangqi/MyCode/ImageLocater/build/Debug-iphonesimulator -I/Users/jiangqi/MyCode/ImageLocater/build/Debug-iphonesimulator/include -I/Users/jiangqi/MyCode/ImageLocater/build/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/DerivedSources/i386 -I/Users/jiangqi/MyCode/ImageLocater/build/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/DerivedSources -include /var/folders/ho/ho+icBmzHSu8BcRcONVTC++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ImageLocater_Prefix-fiqpczmhekhaijaxofxxwrxxgnfn/ImageLocater_Prefix.pch -c /Users/jiangqi/MyCode/ImageLocater/Classes/ImageLocaterAppDelegate.m -o /Users/jiangqi/MyCode/ImageLocater/build/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/Objects-normal/i386/ImageLocaterAppDelegate.o0#
+
+CCompileC build/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/Objects-normal/i386/ImageViewController.o /Users/jiangqi/MyCode/ImageLocater/Classes/ImageViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s299596382.967568
+e299596383.131577
+r1
+xCompileC
+xbuild/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/Objects-normal/i386/ImageViewController.o
+x/Users/jiangqi/MyCode/ImageLocater/Classes/ImageViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@72"Compile /Users/jiangqi/MyCode/ImageLocater/Classes/ImageViewController.m299596382#299596383#0(0"0(0#0#64"/Users/jiangqi/MyCode/ImageLocater/Classes/ImageViewController.m8630048256#1995"    cd /Users/jiangqi/MyCode/ImageLocater    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Users/jiangqi/MyCode/ImageLocater/build/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/ImageLocater-generated-files.hmap -I/Users/jiangqi/MyCode/ImageLocater/build/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/ImageLocater-own-target-headers.hmap -I/Users/jiangqi/MyCode/ImageLocater/build/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/ImageLocater-all-target-headers.hmap -iquote /Users/jiangqi/MyCode/ImageLocater/build/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/ImageLocater-project-headers.hmap -F/Users/jiangqi/MyCode/ImageLocater/build/Debug-iphonesimulator -I/Users/jiangqi/MyCode/ImageLocater/build/Debug-iphonesimulator/include -I/Users/jiangqi/MyCode/ImageLocater/build/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/DerivedSources/i386 -I/Users/jiangqi/MyCode/ImageLocater/build/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/DerivedSources -include /var/folders/ho/ho+icBmzHSu8BcRcONVTC++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ImageLocater_Prefix-fiqpczmhekhaijaxofxxwrxxgnfn/ImageLocater_Prefix.pch -c /Users/jiangqi/MyCode/ImageLocater/Classes/ImageViewController.m -o /Users/jiangqi/MyCode/ImageLocater/build/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/Objects-normal/i386/ImageViewController.o0#
+
+CCompileC build/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/Objects-normal/i386/LoginController.o /Users/jiangqi/MyCode/ImageLocater/Classes/LoginController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s299765819.462693
+e299765820.497540
+r1
+xCompileC
+xbuild/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/Objects-normal/i386/LoginController.o
+x/Users/jiangqi/MyCode/ImageLocater/Classes/LoginController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@68"Compile /Users/jiangqi/MyCode/ImageLocater/Classes/LoginController.m299765819#299765820#0(0"0(0#0#60"/Users/jiangqi/MyCode/ImageLocater/Classes/LoginController.m3415246321466560000#1987"    cd /Users/jiangqi/MyCode/ImageLocater    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Users/jiangqi/MyCode/ImageLocater/build/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/ImageLocater-generated-files.hmap -I/Users/jiangqi/MyCode/ImageLocater/build/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/ImageLocater-own-target-headers.hmap -I/Users/jiangqi/MyCode/ImageLocater/build/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/ImageLocater-all-target-headers.hmap -iquote /Users/jiangqi/MyCode/ImageLocater/build/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/ImageLocater-project-headers.hmap -F/Users/jiangqi/MyCode/ImageLocater/build/Debug-iphonesimulator -I/Users/jiangqi/MyCode/ImageLocater/build/Debug-iphonesimulator/include -I/Users/jiangqi/MyCode/ImageLocater/build/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/DerivedSources/i386 -I/Users/jiangqi/MyCode/ImageLocater/build/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/DerivedSources -include /var/folders/ho/ho+icBmzHSu8BcRcONVTC++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ImageLocater_Prefix-fiqpczmhekhaijaxofxxwrxxgnfn/ImageLocater_Prefix.pch -c /Users/jiangqi/MyCode/ImageLocater/Classes/LoginController.m -o /Users/jiangqi/MyCode/ImageLocater/build/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/Objects-normal/i386/LoginController.o0#
+
+CCompileC build/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/Objects-normal/i386/MainController.o /Users/jiangqi/MyCode/ImageLocater/Classes/MainController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s299681215.019033
+e299681215.155852
+r1
+xCompileC
+xbuild/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/Objects-normal/i386/MainController.o
+x/Users/jiangqi/MyCode/ImageLocater/Classes/MainController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@67"Compile /Users/jiangqi/MyCode/ImageLocater/Classes/MainController.m299681215#299681215#0(0"0(0#0#59"/Users/jiangqi/MyCode/ImageLocater/Classes/MainController.m8620024160#1985"    cd /Users/jiangqi/MyCode/ImageLocater    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Users/jiangqi/MyCode/ImageLocater/build/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/ImageLocater-generated-files.hmap -I/Users/jiangqi/MyCode/ImageLocater/build/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/ImageLocater-own-target-headers.hmap -I/Users/jiangqi/MyCode/ImageLocater/build/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/ImageLocater-all-target-headers.hmap -iquote /Users/jiangqi/MyCode/ImageLocater/build/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/ImageLocater-project-headers.hmap -F/Users/jiangqi/MyCode/ImageLocater/build/Debug-iphonesimulator -I/Users/jiangqi/MyCode/ImageLocater/build/Debug-iphonesimulator/include -I/Users/jiangqi/MyCode/ImageLocater/build/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/DerivedSources/i386 -I/Users/jiangqi/MyCode/ImageLocater/build/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/DerivedSources -include /var/folders/ho/ho+icBmzHSu8BcRcONVTC++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ImageLocater_Prefix-fiqpczmhekhaijaxofxxwrxxgnfn/ImageLocater_Prefix.pch -c /Users/jiangqi/MyCode/ImageLocater/Classes/MainController.m -o /Users/jiangqi/MyCode/ImageLocater/build/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/Objects-normal/i386/MainController.o0#
+
+CCompileC build/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/Objects-normal/i386/MapViewController.o /Users/jiangqi/MyCode/ImageLocater/Classes/MapViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s299632530.745617
+e299632530.945759
+r1
+xCompileC
+xbuild/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/Objects-normal/i386/MapViewController.o
+x/Users/jiangqi/MyCode/ImageLocater/Classes/MapViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@70"Compile /Users/jiangqi/MyCode/ImageLocater/Classes/MapViewController.m299632530#299632530#0(0"0(0#0#62"/Users/jiangqi/MyCode/ImageLocater/Classes/MapViewController.m8619250560#1991"    cd /Users/jiangqi/MyCode/ImageLocater    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Users/jiangqi/MyCode/ImageLocater/build/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/ImageLocater-generated-files.hmap -I/Users/jiangqi/MyCode/ImageLocater/build/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/ImageLocater-own-target-headers.hmap -I/Users/jiangqi/MyCode/ImageLocater/build/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/ImageLocater-all-target-headers.hmap -iquote /Users/jiangqi/MyCode/ImageLocater/build/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/ImageLocater-project-headers.hmap -F/Users/jiangqi/MyCode/ImageLocater/build/Debug-iphonesimulator -I/Users/jiangqi/MyCode/ImageLocater/build/Debug-iphonesimulator/include -I/Users/jiangqi/MyCode/ImageLocater/build/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/DerivedSources/i386 -I/Users/jiangqi/MyCode/ImageLocater/build/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/DerivedSources -include /var/folders/ho/ho+icBmzHSu8BcRcONVTC++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ImageLocater_Prefix-fiqpczmhekhaijaxofxxwrxxgnfn/ImageLocater_Prefix.pch -c /Users/jiangqi/MyCode/ImageLocater/Classes/MapViewController.m -o /Users/jiangqi/MyCode/ImageLocater/build/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/Objects-normal/i386/MapViewController.o0#
+
+CCompileC build/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/Objects-normal/i386/SFAnnotation.o /Users/jiangqi/MyCode/ImageLocater/../MapCallouts/SFAnnotation.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s299336382.939541
+e299336383.151291
+r1
+xCompileC
+xbuild/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/Objects-normal/i386/SFAnnotation.o
+x/Users/jiangqi/MyCode/ImageLocater/../MapCallouts/SFAnnotation.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@72"Compile /Users/jiangqi/MyCode/ImageLocater/../MapCallouts/SFAnnotation.m299336382#299336383#0(0"0(0#0#64"/Users/jiangqi/MyCode/ImageLocater/../MapCallouts/SFAnnotation.m8621843104#1988"    cd /Users/jiangqi/MyCode/ImageLocater    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Users/jiangqi/MyCode/ImageLocater/build/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/ImageLocater-generated-files.hmap -I/Users/jiangqi/MyCode/ImageLocater/build/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/ImageLocater-own-target-headers.hmap -I/Users/jiangqi/MyCode/ImageLocater/build/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/ImageLocater-all-target-headers.hmap -iquote /Users/jiangqi/MyCode/ImageLocater/build/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/ImageLocater-project-headers.hmap -F/Users/jiangqi/MyCode/ImageLocater/build/Debug-iphonesimulator -I/Users/jiangqi/MyCode/ImageLocater/build/Debug-iphonesimulator/include -I/Users/jiangqi/MyCode/ImageLocater/build/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/DerivedSources/i386 -I/Users/jiangqi/MyCode/ImageLocater/build/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/DerivedSources -include /var/folders/ho/ho+icBmzHSu8BcRcONVTC++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ImageLocater_Prefix-fiqpczmhekhaijaxofxxwrxxgnfn/ImageLocater_Prefix.pch -c /Users/jiangqi/MyCode/ImageLocater/../MapCallouts/SFAnnotation.m -o /Users/jiangqi/MyCode/ImageLocater/build/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/Objects-normal/i386/SFAnnotation.o0#
+
+CCompileC build/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/Objects-normal/i386/main.o /Users/jiangqi/MyCode/ImageLocater/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s299327625.033415
+e299327625.129209
+r1
+xCompileC
+xbuild/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/Objects-normal/i386/main.o
+x/Users/jiangqi/MyCode/ImageLocater/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@49"Compile /Users/jiangqi/MyCode/ImageLocater/main.m299327625#299327625#0(0"0(0#0#41"/Users/jiangqi/MyCode/ImageLocater/main.m8613901184#1957"    cd /Users/jiangqi/MyCode/ImageLocater    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Users/jiangqi/MyCode/ImageLocater/build/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/ImageLocater-generated-files.hmap -I/Users/jiangqi/MyCode/ImageLocater/build/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/ImageLocater-own-target-headers.hmap -I/Users/jiangqi/MyCode/ImageLocater/build/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/ImageLocater-all-target-headers.hmap -iquote /Users/jiangqi/MyCode/ImageLocater/build/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/ImageLocater-project-headers.hmap -F/Users/jiangqi/MyCode/ImageLocater/build/Debug-iphonesimulator -I/Users/jiangqi/MyCode/ImageLocater/build/Debug-iphonesimulator/include -I/Users/jiangqi/MyCode/ImageLocater/build/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/DerivedSources/i386 -I/Users/jiangqi/MyCode/ImageLocater/build/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/DerivedSources -include /var/folders/ho/ho+icBmzHSu8BcRcONVTC++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ImageLocater_Prefix-fiqpczmhekhaijaxofxxwrxxgnfn/ImageLocater_Prefix.pch -c /Users/jiangqi/MyCode/ImageLocater/main.m -o /Users/jiangqi/MyCode/ImageLocater/build/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/Objects-normal/i386/main.o0#
+
+CCompileXIB /Users/jiangqi/MyCode/ImageLocater/Classes/ImageViewController.xib
+s299511451.388331
+e299511451.764039
+r1
+xCompileXIB
+x/Users/jiangqi/MyCode/ImageLocater/Classes/ImageViewController.xib
+lSLF07#2@42"CompileXIB Classes/ImageViewController.xib299511451#299511451#0(0"0(0#0#66"/Users/jiangqi/MyCode/ImageLocater/Classes/ImageViewController.xib8627075360#589"    cd /Users/jiangqi/MyCode/ImageLocater    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/jiangqi/MyCode/ImageLocater/build/Debug-iphonesimulator/ImageLocater.app/ImageViewController.nib /Users/jiangqi/MyCode/ImageLocater/Classes/ImageViewController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk0#
+
+CCompileXIB /Users/jiangqi/MyCode/ImageLocater/Classes/LoginController.xib
+s299681449.025955
+e299681449.522943
+r1
+xCompileXIB
+x/Users/jiangqi/MyCode/ImageLocater/Classes/LoginController.xib
+lSLF07#2@38"CompileXIB Classes/LoginController.xib299681449#299681449#0(0"0(0#0#62"/Users/jiangqi/MyCode/ImageLocater/Classes/LoginController.xib8632594688#581"    cd /Users/jiangqi/MyCode/ImageLocater    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/jiangqi/MyCode/ImageLocater/build/Debug-iphonesimulator/ImageLocater.app/LoginController.nib /Users/jiangqi/MyCode/ImageLocater/Classes/LoginController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk0#
+
+CCompileXIB /Users/jiangqi/MyCode/ImageLocater/Classes/MainController.xib
+s299505068.602856
+e299505068.986739
+r1
+xCompileXIB
+x/Users/jiangqi/MyCode/ImageLocater/Classes/MainController.xib
+lSLF07#2@37"CompileXIB Classes/MainController.xib299505068#299505068#0(0"0(0#0#61"/Users/jiangqi/MyCode/ImageLocater/Classes/MainController.xib8614526080#579"    cd /Users/jiangqi/MyCode/ImageLocater    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/jiangqi/MyCode/ImageLocater/build/Debug-iphonesimulator/ImageLocater.app/MainController.nib /Users/jiangqi/MyCode/ImageLocater/Classes/MainController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk0#
+
+CCompileXIB /Users/jiangqi/MyCode/ImageLocater/Classes/MapViewController.xib
+s299630111.430476
+e299630111.861539
+r1
+xCompileXIB
+x/Users/jiangqi/MyCode/ImageLocater/Classes/MapViewController.xib
+lSLF07#2@40"CompileXIB Classes/MapViewController.xib299630111#299630111#0(0"0(0#0#64"/Users/jiangqi/MyCode/ImageLocater/Classes/MapViewController.xib8616220832#585"    cd /Users/jiangqi/MyCode/ImageLocater    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/jiangqi/MyCode/ImageLocater/build/Debug-iphonesimulator/ImageLocater.app/MapViewController.nib /Users/jiangqi/MyCode/ImageLocater/Classes/MapViewController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk0#
+
+CCompileXIB /Users/jiangqi/MyCode/ImageLocater/MainWindow.xib
+s299504904.572142
+e299504905.026139
+r1
+xCompileXIB
+x/Users/jiangqi/MyCode/ImageLocater/MainWindow.xib
+lSLF07#2@25"CompileXIB MainWindow.xib299504904#299504905#0(0"0(0#0#49"/Users/jiangqi/MyCode/ImageLocater/MainWindow.xib27866499440705636#563"    cd /Users/jiangqi/MyCode/ImageLocater    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/jiangqi/MyCode/ImageLocater/build/Debug-iphonesimulator/ImageLocater.app/MainWindow.nib /Users/jiangqi/MyCode/ImageLocater/MainWindow.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk0#
+
+CGenerateDSYMFile /Users/jiangqi/MyCode/ImageLocater/build/Debug-iphonesimulator/ImageLocater.app.dSYM /Users/jiangqi/MyCode/ImageLocater/build/Debug-iphonesimulator/ImageLocater.app/ImageLocater
+s299765821.118411
+e299765821.228772
+r1
+xGenerateDSYMFile
+x/Users/jiangqi/MyCode/ImageLocater/build/Debug-iphonesimulator/ImageLocater.app.dSYM
+x/Users/jiangqi/MyCode/ImageLocater/build/Debug-iphonesimulator/ImageLocater.app/ImageLocater
+lSLF07#2@124"GenerateDSYMFile build/Debug-iphonesimulator/ImageLocater.app.dSYM build/Debug-iphonesimulator/ImageLocater.app/ImageLocater299765821#299765821#0(0"0(0#0#92"/Users/jiangqi/MyCode/ImageLocater/build/Debug-iphonesimulator/ImageLocater.app/ImageLocater8602781024#386"    cd /Users/jiangqi/MyCode/ImageLocater    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/jiangqi/MyCode/ImageLocater/build/Debug-iphonesimulator/ImageLocater.app/ImageLocater -o /Users/jiangqi/MyCode/ImageLocater/build/Debug-iphonesimulator/ImageLocater.app.dSYM0#
+
+CLd /Users/jiangqi/MyCode/ImageLocater/build/Debug-iphonesimulator/ImageLocater.app/ImageLocater normal i386
+s299765820.497628
+e299765821.118259
+r1
+xLd
+x/Users/jiangqi/MyCode/ImageLocater/build/Debug-iphonesimulator/ImageLocater.app/ImageLocater
+xnormal
+xi386
+lSLF07#2@97"Link /Users/jiangqi/MyCode/ImageLocater/build/Debug-iphonesimulator/ImageLocater.app/ImageLocater299765820#299765821#0(0"0(0#0#0"8601464544#947"    cd /Users/jiangqi/MyCode/ImageLocater    setenv MACOSX_DEPLOYMENT_TARGET 10.5    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -L/Users/jiangqi/MyCode/ImageLocater/build/Debug-iphonesimulator -F/Users/jiangqi/MyCode/ImageLocater/build/Debug-iphonesimulator -filelist /Users/jiangqi/MyCode/ImageLocater/build/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/Objects-normal/i386/ImageLocater.LinkFileList -mmacosx-version-min=10.5 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -framework CoreLocation -framework MapKit -o /Users/jiangqi/MyCode/ImageLocater/build/Debug-iphonesimulator/ImageLocater.app/ImageLocater0#
+
+CProcessInfoPlistFile /Users/jiangqi/MyCode/ImageLocater/build/Debug-iphonesimulator/ImageLocater.app/Info.plist ImageLocater-Info.plist
+s299327623.120943
+e299327623.134445
+r1
+xProcessInfoPlistFile
+x/Users/jiangqi/MyCode/ImageLocater/build/Debug-iphonesimulator/ImageLocater.app/Info.plist
+xImageLocater-Info.plist
+lSLF07#2@31"Process ImageLocater-Info.plist299327623#299327623#0(0"0(0#0#58"/Users/jiangqi/MyCode/ImageLocater/ImageLocater-Info.plist8615779648#482"    cd /Users/jiangqi/MyCode/ImageLocater    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility ImageLocater-Info.plist -genpkginfo /Users/jiangqi/MyCode/ImageLocater/build/Debug-iphonesimulator/ImageLocater.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/jiangqi/MyCode/ImageLocater/build/Debug-iphonesimulator/ImageLocater.app/Info.plist0#
+
+CProcessPCH /var/folders/ho/ho+icBmzHSu8BcRcONVTC++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ImageLocater_Prefix-fiqpczmhekhaijaxofxxwrxxgnfn/ImageLocater_Prefix.pch.gch ImageLocater_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s299327624.325990
+e299327625.033267
+r1
+xProcessPCH
+x/var/folders/ho/ho+icBmzHSu8BcRcONVTC++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ImageLocater_Prefix-fiqpczmhekhaijaxofxxwrxxgnfn/ImageLocater_Prefix.pch.gch
+xImageLocater_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@34"Precompile ImageLocater_Prefix.pch299327624#299327625#0(0"0(0#0#58"/Users/jiangqi/MyCode/ImageLocater/ImageLocater_Prefix.pch8617414656#1848"    cd /Users/jiangqi/MyCode/ImageLocater    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Users/jiangqi/MyCode/ImageLocater/build/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/ImageLocater-generated-files.hmap -I/Users/jiangqi/MyCode/ImageLocater/build/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/ImageLocater-own-target-headers.hmap -I/Users/jiangqi/MyCode/ImageLocater/build/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/ImageLocater-all-target-headers.hmap -iquote /Users/jiangqi/MyCode/ImageLocater/build/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/ImageLocater-project-headers.hmap -F/Users/jiangqi/MyCode/ImageLocater/build/Debug-iphonesimulator -I/Users/jiangqi/MyCode/ImageLocater/build/Debug-iphonesimulator/include -I/Users/jiangqi/MyCode/ImageLocater/build/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/DerivedSources/i386 -I/Users/jiangqi/MyCode/ImageLocater/build/ImageLocater.build/Debug-iphonesimulator/ImageLocater.build/DerivedSources -c /Users/jiangqi/MyCode/ImageLocater/ImageLocater_Prefix.pch -o /var/folders/ho/ho+icBmzHSu8BcRcONVTC++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ImageLocater_Prefix-fiqpczmhekhaijaxofxxwrxxgnfn/ImageLocater_Prefix.pch.gch0#
+
+CTouch /Users/jiangqi/MyCode/ImageLocater/build/Debug-iphonesimulator/ImageLocater.app
+s299765821.228870
+e299765821.253315
+r1
+xTouch
+x/Users/jiangqi/MyCode/ImageLocater/build/Debug-iphonesimulator/ImageLocater.app
+lSLF07#2@85"Touch /Users/jiangqi/MyCode/ImageLocater/build/Debug-iphonesimulator/ImageLocater.app299765821#299765821#0(0"0(0#0#0"8601697728#275"    cd /Users/jiangqi/MyCode/ImageLocater    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/jiangqi/MyCode/ImageLocater/build/Debug-iphonesimulator/ImageLocater.app0#
+
