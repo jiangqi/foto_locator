@@ -5,7 +5,6 @@
 //  Created by Jiang Qi on 10-6-28.
 //  Copyright 2010 __MyCompanyName__. All rights reserved.
 //
-
 #import "MainController.h"
 #import "LoginController.h"
 
@@ -47,6 +46,7 @@
 #pragma mark -
 #pragma mark ButtonActions
 - (IBAction)signin:(id)sender {
+	
 	[loginController.view removeFromSuperview];
 	[self.view insertSubview:navViewController.view atIndex:0];
 }
@@ -54,5 +54,4 @@
 - (IBAction)signup:(id)sender {
 	[[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.apple.com"]];
 }
-
 @end

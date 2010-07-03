@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ObjectiveFlickr.h"
 
 @class LoginController;
 @class MapViewController;
@@ -21,5 +22,4 @@
 
 - (IBAction)signin:(id)sender;
 - (IBAction)signup:(id)sender;
-
 @end

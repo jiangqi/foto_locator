@@ -5,7 +5,6 @@
 //  Created by Jiang Qi on 10-6-27.
 //  Copyright 2010 __MyCompanyName__. All rights reserved.
 //
-
 #import "LoginController.h"
 #import "MainController.h"
 
