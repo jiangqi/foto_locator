@@ -37,10 +37,10 @@ enum
 {
     // start off by default in San Francisco
     MKCoordinateRegion newRegion;
-    newRegion.center.latitude = 37.786996;
-    newRegion.center.longitude = -122.440100;
-    newRegion.span.latitudeDelta = 0.112872;
-    newRegion.span.longitudeDelta = 0.109863;
+    newRegion.center.latitude = (maxLat + minLat) / 2;
+    newRegion.center.longitude = (maxLon + minLon) / 2;
+    newRegion.span.latitudeDelta = (maxLat - minLat) + 0.01;
+    newRegion.span.longitudeDelta = (maxLon - minLon) + 0.01;
 	
     [self.mapView setRegion:newRegion animated:YES];
 }
@@ -54,25 +54,15 @@ enum
 - (void)viewDidLoad
 {
     self.mapView.mapType = MKMapTypeStandard;   // also MKMapTypeSatellite or MKMapTypeHybrid
+	self.mapAnnotations = [NSMutableArray array];
 	
-    // create out annotations array (in this example only 2)
-    self.mapAnnotations = [[NSMutableArray alloc] initWithCapacity:2];
-    
-    // annotation for the City of San Francisco
-    SFAnnotation *sfAnnotation = [[SFAnnotation alloc] init];
-    [self.mapAnnotations insertObject:sfAnnotation atIndex:kCityAnnotationIndex];
-    [sfAnnotation release];
-    
-    // annotation for Golden Gate Bridge
-    BridgeAnnotation *bridgeAnnotation = [[BridgeAnnotation alloc] init];
-    [self.mapAnnotations insertObject:bridgeAnnotation atIndex:kBridgeAnnotationIndex];
-    [bridgeAnnotation release];
-    
-    [self gotoLocation];    // finally goto San Francisco
-	[self.mapView removeAnnotations:self.mapView.annotations];  // remove any annotations that exist
-    
-    [self.mapView addAnnotation:[self.mapAnnotations objectAtIndex:kBridgeAnnotationIndex]];
-	
+	SFAnnotation *tempAnnotation = [SFAnnotation alloc];
+	[tempAnnotation setLatitude:0];
+	[tempAnnotation setLongitude:0];
+	[self.mapAnnotations addObject:tempAnnotation];
+	[self.mapView addAnnotation:tempAnnotation];
+	[tempAnnotation release];
+	[self gotoLocation];
 }
 
 
@@ -98,38 +88,48 @@ enum
     // e.g. self.myOutlet = nil;
 }
 
+- (void)pushAnnotation:(NSMutableArray *)list {
+	// First let's calcluate the map range.
+	minLat = 0;
+	maxLat = 0;
+	minLon = 0;
+	maxLon = 0;
+	for (int i = 0; i < [list count]; i++) {
+		SFAnnotation *annotation = [list objectAtIndex:i];
+		
+		if (minLat == 0 || minLat >= [annotation getLatitude]) {
+			minLat = [annotation getLatitude];
+		}
+		
+		if (maxLat == 0 || maxLat <= [annotation getLatitude]) {
+			maxLat = [annotation getLatitude];
+		}
+		
+		if (minLon == 0 || minLon >= [annotation getLongitude]) {
+			minLon = [annotation getLongitude];
+		}
+		
+		if (maxLon == 0 || maxLon <= [annotation getLongitude]) {
+			maxLon = [annotation getLongitude];
+		}
+	}
+	
+	if (self.mapAnnotations != nil) {
+		[self.mapView removeAnnotations:self.mapView.annotations];  // remove any annotations that exist
+	}
+	self.mapAnnotations = [NSMutableArray array];
+	for (int i = 0; i < [list count]; i++) {
+		[self.mapAnnotations addObject:[list objectAtIndex:i]];
+		[self.mapView addAnnotation:[list objectAtIndex:i]];
+	}
+	
+	[self gotoLocation];    // finally goto zoom
+}
+
 
 - (void)dealloc {
     [super dealloc];
 }
-#pragma mark -
-#pragma mark ButtonActions
-
-- (IBAction)cityAction:(id)sender
-{
-    [self gotoLocation];//•• avoid this by checking its region from ours??
-    
-    [self.mapView removeAnnotations:self.mapView.annotations];  // remove any annotations that exist
-    
-    [self.mapView addAnnotation:[self.mapAnnotations objectAtIndex:kCityAnnotationIndex]];
-}
-
-- (IBAction)bridgeAction:(id)sender
-{
-    [self gotoLocation];
-    [self.mapView removeAnnotations:self.mapView.annotations];  // remove any annotations that exist
-    
-    [self.mapView addAnnotation:[self.mapAnnotations objectAtIndex:kBridgeAnnotationIndex]];
-}
-
-- (IBAction)allAction:(id)sender
-{
-    [self gotoLocation];
-    [self.mapView removeAnnotations:self.mapView.annotations];  // remove any annotations that exist
-    
-    [self.mapView addAnnotations:self.mapAnnotations];
-}
-
 #pragma mark -
 #pragma mark MKMapViewDelegate
 
@@ -167,8 +167,7 @@ enum
     
     // handle our two custom annotations
     //
-    if ([annotation isKindOfClass:[BridgeAnnotation class]]) // for Golden Gate Bridge
-    {
+    
         // try to dequeue an existing pin view first
         static NSString* BridgeAnnotationIdentifier = @"bridgeAnnotationIdentifier";
         MKPinAnnotationView* pinView = (MKPinAnnotationView *)
@@ -200,55 +199,6 @@ enum
             pinView.annotation = annotation;
         }
         return pinView;
-    }
-    else if ([annotation isKindOfClass:[SFAnnotation class]])   // for City of San Francisco
-    {
-        static NSString* SFAnnotationIdentifier = @"SFAnnotationIdentifier";
-        MKPinAnnotationView* pinView =
-		(MKPinAnnotationView *)[mapView dequeueReusableAnnotationViewWithIdentifier:SFAnnotationIdentifier];
-        if (!pinView)
-        {
-            MKAnnotationView *annotationView = [[[MKAnnotationView alloc] initWithAnnotation:annotation
-                                                                             reuseIdentifier:SFAnnotationIdentifier] autorelease];
-            annotationView.canShowCallout = YES;
-			
-            UIImage *flagImage = [UIImage imageNamed:@"flag.png"];
-            
-            CGRect resizeRect;
-            
-            resizeRect.size = flagImage.size;
-            CGSize maxSize = CGRectInset(self.view.bounds,
-                                         [MapViewController annotationPadding],
-                                         [MapViewController annotationPadding]).size;
-            maxSize.height -= self.navigationController.navigationBar.frame.size.height + [MapViewController calloutHeight];
-            if (resizeRect.size.width > maxSize.width)
-                resizeRect.size = CGSizeMake(maxSize.width, resizeRect.size.height / resizeRect.size.width * maxSize.width);
-            if (resizeRect.size.height > maxSize.height)
-                resizeRect.size = CGSizeMake(resizeRect.size.width / resizeRect.size.height * maxSize.height, maxSize.height);
-            
-            resizeRect.origin = (CGPoint){0.0f, 0.0f};
-            UIGraphicsBeginImageContext(resizeRect.size);
-            [flagImage drawInRect:resizeRect];
-            UIImage *resizedImage = UIGraphicsGetImageFromCurrentImageContext();
-            UIGraphicsEndImageContext();
-            
-            annotationView.image = resizedImage;
-            annotationView.opaque = NO;
-			
-            UIImageView *sfIconView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"SFIcon.png"]];
-            annotationView.leftCalloutAccessoryView = sfIconView;
-            [sfIconView release];
-            
-            return annotationView;
-        }
-        else
-        {
-            pinView.annotation = annotation;
-        }
-        return pinView;
-    }
-    
-    return nil;
 }
 
 

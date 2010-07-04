@@ -22,11 +22,13 @@
 		CC21CD3611D77FB20050D21B /* MainController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC21CD3411D77FB20050D21B /* MainController.xib */; };
 		CC21CD4111D7814D0050D21B /* SFAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = CC21CD3E11D7814D0050D21B /* SFAnnotation.m */; };
 		CC21CD4211D7814D0050D21B /* BridgeAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = CC21CD4011D7814D0050D21B /* BridgeAnnotation.m */; };
+		CC26957111E010DF00A3E000 /* libObjectiveFlickr.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CC26954C11E00DDE00A3E000 /* libObjectiveFlickr.a */; };
+		CC26963C11E039D300A3E000 /* SFPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = CC26963B11E039D300A3E000 /* SFPhoto.m */; };
+		CC2696A811E03ED400A3E000 /* SFCircule.m in Sources */ = {isa = PBXBuildFile; fileRef = CC2696A711E03ED400A3E000 /* SFCircule.m */; };
 		CC74427F11DA1AAE00CA31E1 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC74427D11DA1AAE00CA31E1 /* ImageViewController.m */; };
 		CC74428011DA1AAE00CA31E1 /* ImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC74427E11DA1AAE00CA31E1 /* ImageViewController.xib */; };
 		CC8033AD11D812CC00CFEE82 /* MainController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC8033AC11D812CC00CFEE82 /* MainController.m */; };
 		CCB1117611DF15A500721F63 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCB1117511DF15A500721F63 /* CFNetwork.framework */; };
-		CCB1121411DF180900721F63 /* libObjectiveFlickr.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CCB1120F11DF172E00721F63 /* libObjectiveFlickr.a */; };
 		CCB113DD11DF315000721F63 /* SelectSetView.m in Sources */ = {isa = PBXBuildFile; fileRef = CCB113DB11DF315000721F63 /* SelectSetView.m */; };
 		CCB113DE11DF315000721F63 /* SelectSetView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCB113DC11DF315000721F63 /* SelectSetView.xib */; };
 		CCB1151411DF463F00721F63 /* TripViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCB1151211DF463F00721F63 /* TripViewController.m */; };
@@ -44,25 +46,25 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		CCB1120C11DF172E00721F63 /* PBXContainerItemProxy */ = {
+		CC26954911E00DDE00A3E000 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CCB1120611DF172E00721F63 /* ObjectiveFlickr.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 6A8666490F9593B200325E1C /* ObjectiveFlickr.framework */;
+			remoteGlobalIDString = 6A8666490F9593B200325E1C;
 			remoteInfo = "ObjectiveFlickr (framework)";
 		};
-		CCB1120E11DF172E00721F63 /* PBXContainerItemProxy */ = {
+		CC26954B11E00DDE00A3E000 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CCB1120611DF172E00721F63 /* ObjectiveFlickr.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 6ABF72E60F939BE600B9179E /* libObjectiveFlickr.a */;
+			remoteGlobalIDString = 6ABF72E60F939BE600B9179E;
 			remoteInfo = "ObjectiveFlickr (library)";
 		};
-		CCB1121211DF17CB00721F63 /* PBXContainerItemProxy */ = {
+		CC26956A11E0108700A3E000 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CCB1120611DF172E00721F63 /* ObjectiveFlickr.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = 6ABF72E50F939BE600B9179E /* ObjectiveFlickr (library) */;
+			remoteGlobalIDString = 6ABF72E50F939BE600B9179E;
 			remoteInfo = "ObjectiveFlickr (library)";
 		};
 /* End PBXContainerItemProxy section */
@@ -87,42 +89,46 @@
 		CC21CCB211D769DC0050D21B /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		CC21CCB311D769DC0050D21B /* MapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MapViewController.xib; path = Classes/MapViewController.xib; sourceTree = "<group>"; };
 		CC21CD3411D77FB20050D21B /* MainController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MainController.xib; path = Classes/MainController.xib; sourceTree = "<group>"; };
-		CC21CD3D11D7814D0050D21B /* SFAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SFAnnotation.h; path = ../MapCallouts/SFAnnotation.h; sourceTree = SOURCE_ROOT; };
-		CC21CD3E11D7814D0050D21B /* SFAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SFAnnotation.m; path = ../MapCallouts/SFAnnotation.m; sourceTree = SOURCE_ROOT; };
-		CC21CD3F11D7814D0050D21B /* BridgeAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BridgeAnnotation.h; path = ../MapCallouts/BridgeAnnotation.h; sourceTree = SOURCE_ROOT; };
-		CC21CD4011D7814D0050D21B /* BridgeAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BridgeAnnotation.m; path = ../MapCallouts/BridgeAnnotation.m; sourceTree = SOURCE_ROOT; };
+		CC21CD3D11D7814D0050D21B /* SFAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SFAnnotation.h; path = vo/SFAnnotation.h; sourceTree = "<group>"; };
+		CC21CD3E11D7814D0050D21B /* SFAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SFAnnotation.m; path = vo/SFAnnotation.m; sourceTree = "<group>"; };
+		CC21CD3F11D7814D0050D21B /* BridgeAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BridgeAnnotation.h; path = vo/BridgeAnnotation.h; sourceTree = "<group>"; };
+		CC21CD4011D7814D0050D21B /* BridgeAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BridgeAnnotation.m; path = vo/BridgeAnnotation.m; sourceTree = "<group>"; };
+		CC26963A11E039D300A3E000 /* SFPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFPhoto.h; sourceTree = "<group>"; };
+		CC26963B11E039D300A3E000 /* SFPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFPhoto.m; sourceTree = "<group>"; };
+		CC2696A611E03ED400A3E000 /* SFCircule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCircule.h; sourceTree = "<group>"; };
+		CC2696A711E03ED400A3E000 /* SFCircule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCircule.m; sourceTree = "<group>"; };
 		CC74427C11DA1AAE00CA31E1 /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
 		CC74427D11DA1AAE00CA31E1 /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
 		CC74427E11DA1AAE00CA31E1 /* ImageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ImageViewController.xib; path = Classes/ImageViewController.xib; sourceTree = "<group>"; };
 		CC8033AB11D812CC00CFEE82 /* MainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainController.h; sourceTree = "<group>"; };
 		CC8033AC11D812CC00CFEE82 /* MainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainController.m; sourceTree = "<group>"; };
-		CCB110FB11DF0F9B00721F63 /* SampleAPIKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SampleAPIKey.h; path = ../../workspace/topcoder/objectiveflickr/SampleAPIKey.h; sourceTree = SOURCE_ROOT; };
+		CCB110FB11DF0F9B00721F63 /* SampleAPIKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleAPIKey.h; sourceTree = "<group>"; };
 		CCB1117511DF15A500721F63 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
-		CCB1120611DF172E00721F63 /* ObjectiveFlickr.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ObjectiveFlickr.xcodeproj; path = ../../workspace/topcoder/objectiveflickr/ObjectiveFlickr.xcodeproj; sourceTree = SOURCE_ROOT; };
+		CCB1120611DF172E00721F63 /* ObjectiveFlickr.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ObjectiveFlickr.xcodeproj; path = ../../objectiveflickr/ObjectiveFlickr.xcodeproj; sourceTree = SOURCE_ROOT; };
 		CCB113DA11DF315000721F63 /* SelectSetView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectSetView.h; sourceTree = "<group>"; };
 		CCB113DB11DF315000721F63 /* SelectSetView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectSetView.m; sourceTree = "<group>"; };
 		CCB113DC11DF315000721F63 /* SelectSetView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SelectSetView.xib; path = Classes/SelectSetView.xib; sourceTree = "<group>"; };
 		CCB1151111DF463F00721F63 /* TripViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TripViewController.h; sourceTree = "<group>"; };
 		CCB1151211DF463F00721F63 /* TripViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TripViewController.m; sourceTree = "<group>"; };
 		CCB1151311DF463F00721F63 /* TripViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TripViewController.xib; sourceTree = "<group>"; };
-		CCB1159011DF560B00721F63 /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASICacheDelegate.h; path = "../../Downloads/pokeb-asi-http-request-bc40d2d/Classes/ASICacheDelegate.h"; sourceTree = SOURCE_ROOT; };
-		CCB1159111DF560B00721F63 /* ASIDownloadCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIDownloadCache.h; path = "../../Downloads/pokeb-asi-http-request-bc40d2d/Classes/ASIDownloadCache.h"; sourceTree = SOURCE_ROOT; };
-		CCB1159211DF560B00721F63 /* ASIDownloadCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIDownloadCache.m; path = "../../Downloads/pokeb-asi-http-request-bc40d2d/Classes/ASIDownloadCache.m"; sourceTree = SOURCE_ROOT; };
-		CCB1159311DF560B00721F63 /* ASIFormDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIFormDataRequest.h; path = "../../Downloads/pokeb-asi-http-request-bc40d2d/Classes/ASIFormDataRequest.h"; sourceTree = SOURCE_ROOT; };
-		CCB1159411DF560B00721F63 /* ASIFormDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIFormDataRequest.m; path = "../../Downloads/pokeb-asi-http-request-bc40d2d/Classes/ASIFormDataRequest.m"; sourceTree = SOURCE_ROOT; };
-		CCB1159511DF560B00721F63 /* ASIHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIHTTPRequest.h; path = "../../Downloads/pokeb-asi-http-request-bc40d2d/Classes/ASIHTTPRequest.h"; sourceTree = SOURCE_ROOT; };
-		CCB1159611DF560B00721F63 /* ASIHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIHTTPRequest.m; path = "../../Downloads/pokeb-asi-http-request-bc40d2d/Classes/ASIHTTPRequest.m"; sourceTree = SOURCE_ROOT; };
-		CCB1159711DF560B00721F63 /* ASIHTTPRequestConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIHTTPRequestConfig.h; path = "../../Downloads/pokeb-asi-http-request-bc40d2d/Classes/ASIHTTPRequestConfig.h"; sourceTree = SOURCE_ROOT; };
-		CCB1159811DF560B00721F63 /* ASIHTTPRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIHTTPRequestDelegate.h; path = "../../Downloads/pokeb-asi-http-request-bc40d2d/Classes/ASIHTTPRequestDelegate.h"; sourceTree = SOURCE_ROOT; };
-		CCB1159911DF560B00721F63 /* ASIInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIInputStream.h; path = "../../Downloads/pokeb-asi-http-request-bc40d2d/Classes/ASIInputStream.h"; sourceTree = SOURCE_ROOT; };
-		CCB1159A11DF560B00721F63 /* ASIInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIInputStream.m; path = "../../Downloads/pokeb-asi-http-request-bc40d2d/Classes/ASIInputStream.m"; sourceTree = SOURCE_ROOT; };
-		CCB1159B11DF560B00721F63 /* ASINetworkQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASINetworkQueue.h; path = "../../Downloads/pokeb-asi-http-request-bc40d2d/Classes/ASINetworkQueue.h"; sourceTree = SOURCE_ROOT; };
-		CCB1159C11DF560B00721F63 /* ASINetworkQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASINetworkQueue.m; path = "../../Downloads/pokeb-asi-http-request-bc40d2d/Classes/ASINetworkQueue.m"; sourceTree = SOURCE_ROOT; };
-		CCB1159D11DF560B00721F63 /* ASIProgressDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIProgressDelegate.h; path = "../../Downloads/pokeb-asi-http-request-bc40d2d/Classes/ASIProgressDelegate.h"; sourceTree = SOURCE_ROOT; };
-		CCB115A511DF563100721F63 /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIAuthenticationDialog.h; path = "../../Downloads/pokeb-asi-http-request-bc40d2d/Classes/ASIAuthenticationDialog.h"; sourceTree = SOURCE_ROOT; };
-		CCB115A611DF563100721F63 /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIAuthenticationDialog.m; path = "../../Downloads/pokeb-asi-http-request-bc40d2d/Classes/ASIAuthenticationDialog.m"; sourceTree = SOURCE_ROOT; };
-		CCB115A711DF563100721F63 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = "../../Downloads/pokeb-asi-http-request-bc40d2d/External/Reachability/Reachability.h"; sourceTree = SOURCE_ROOT; };
-		CCB115A811DF563100721F63 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = "../../Downloads/pokeb-asi-http-request-bc40d2d/External/Reachability/Reachability.m"; sourceTree = SOURCE_ROOT; };
+		CCB1159011DF560B00721F63 /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASICacheDelegate.h; path = http/ASICacheDelegate.h; sourceTree = "<group>"; };
+		CCB1159111DF560B00721F63 /* ASIDownloadCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIDownloadCache.h; path = http/ASIDownloadCache.h; sourceTree = "<group>"; };
+		CCB1159211DF560B00721F63 /* ASIDownloadCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIDownloadCache.m; path = http/ASIDownloadCache.m; sourceTree = "<group>"; };
+		CCB1159311DF560B00721F63 /* ASIFormDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIFormDataRequest.h; path = http/ASIFormDataRequest.h; sourceTree = "<group>"; };
+		CCB1159411DF560B00721F63 /* ASIFormDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIFormDataRequest.m; path = http/ASIFormDataRequest.m; sourceTree = "<group>"; };
+		CCB1159511DF560B00721F63 /* ASIHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIHTTPRequest.h; path = http/ASIHTTPRequest.h; sourceTree = "<group>"; };
+		CCB1159611DF560B00721F63 /* ASIHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIHTTPRequest.m; path = http/ASIHTTPRequest.m; sourceTree = "<group>"; };
+		CCB1159711DF560B00721F63 /* ASIHTTPRequestConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIHTTPRequestConfig.h; path = http/ASIHTTPRequestConfig.h; sourceTree = "<group>"; };
+		CCB1159811DF560B00721F63 /* ASIHTTPRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIHTTPRequestDelegate.h; path = http/ASIHTTPRequestDelegate.h; sourceTree = "<group>"; };
+		CCB1159911DF560B00721F63 /* ASIInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIInputStream.h; path = http/ASIInputStream.h; sourceTree = "<group>"; };
+		CCB1159A11DF560B00721F63 /* ASIInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIInputStream.m; path = http/ASIInputStream.m; sourceTree = "<group>"; };
+		CCB1159B11DF560B00721F63 /* ASINetworkQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASINetworkQueue.h; path = http/ASINetworkQueue.h; sourceTree = "<group>"; };
+		CCB1159C11DF560B00721F63 /* ASINetworkQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASINetworkQueue.m; path = http/ASINetworkQueue.m; sourceTree = "<group>"; };
+		CCB1159D11DF560B00721F63 /* ASIProgressDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIProgressDelegate.h; path = http/ASIProgressDelegate.h; sourceTree = "<group>"; };
+		CCB115A511DF563100721F63 /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIAuthenticationDialog.h; path = http/ASIAuthenticationDialog.h; sourceTree = "<group>"; };
+		CCB115A611DF563100721F63 /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIAuthenticationDialog.m; path = http/ASIAuthenticationDialog.m; sourceTree = "<group>"; };
+		CCB115A711DF563100721F63 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = http/Reachability.h; sourceTree = "<group>"; };
+		CCB115A811DF563100721F63 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = http/Reachability.m; sourceTree = "<group>"; };
 		CCB115AD11DF566100721F63 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		CCB115AF11DF567100721F63 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		CCB115B111DF568C00721F63 /* libz.1.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.3.dylib; path = usr/lib/libz.1.2.3.dylib; sourceTree = SDKROOT; };
@@ -133,7 +139,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CCB1121411DF180900721F63 /* libObjectiveFlickr.a in Frameworks */,
+				CC26957111E010DF00A3E000 /* libObjectiveFlickr.a in Frameworks */,
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
@@ -152,8 +158,8 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				CC26986E11E0501600A3E000 /* Flickr */,
 				CCB1156A11DF552900721F63 /* ASIHttp */,
-				CCB110FB11DF0F9B00721F63 /* SampleAPIKey.h */,
 				1D3623240D0F684500981E51 /* ImageLocaterAppDelegate.h */,
 				1D3623250D0F684500981E51 /* ImageLocaterAppDelegate.m */,
 				CC21CC8A11D75C6A0050D21B /* LoginController.h */,
@@ -173,6 +179,10 @@
 				CCB1151111DF463F00721F63 /* TripViewController.h */,
 				CCB1151211DF463F00721F63 /* TripViewController.m */,
 				CCB1151311DF463F00721F63 /* TripViewController.xib */,
+				CC26963A11E039D300A3E000 /* SFPhoto.h */,
+				CC26963B11E039D300A3E000 /* SFPhoto.m */,
+				CC2696A611E03ED400A3E000 /* SFCircule.h */,
+				CC2696A711E03ED400A3E000 /* SFCircule.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -237,13 +247,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		CCB1120711DF172E00721F63 /* Products */ = {
+		CC26954411E00DDE00A3E000 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CCB1120D11DF172E00721F63 /* ObjectiveFlickr.framework */,
-				CCB1120F11DF172E00721F63 /* libObjectiveFlickr.a */,
+				CC26954A11E00DDE00A3E000 /* ObjectiveFlickr.framework */,
+				CC26954C11E00DDE00A3E000 /* libObjectiveFlickr.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		CC26986E11E0501600A3E000 /* Flickr */ = {
+			isa = PBXGroup;
+			children = (
+				CCB110FB11DF0F9B00721F63 /* SampleAPIKey.h */,
+			);
+			name = Flickr;
 			sourceTree = "<group>";
 		};
 		CCB1156A11DF552900721F63 /* ASIHttp */ = {
@@ -285,7 +303,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				CCB1121311DF17CB00721F63 /* PBXTargetDependency */,
+				CC26956B11E0108700A3E000 /* PBXTargetDependency */,
 			);
 			name = ImageLocater;
 			productName = ImageLocater;
@@ -304,7 +322,7 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = CCB1120711DF172E00721F63 /* Products */;
+					ProductGroup = CC26954411E00DDE00A3E000 /* Products */;
 					ProjectRef = CCB1120611DF172E00721F63 /* ObjectiveFlickr.xcodeproj */;
 				},
 			);
@@ -316,18 +334,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		CCB1120D11DF172E00721F63 /* ObjectiveFlickr.framework */ = {
+		CC26954A11E00DDE00A3E000 /* ObjectiveFlickr.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = ObjectiveFlickr.framework;
-			remoteRef = CCB1120C11DF172E00721F63 /* PBXContainerItemProxy */;
+			remoteRef = CC26954911E00DDE00A3E000 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		CCB1120F11DF172E00721F63 /* libObjectiveFlickr.a */ = {
+		CC26954C11E00DDE00A3E000 /* libObjectiveFlickr.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libObjectiveFlickr.a;
-			remoteRef = CCB1120E11DF172E00721F63 /* PBXContainerItemProxy */;
+			remoteRef = CC26954B11E00DDE00A3E000 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -371,16 +389,18 @@
 				CCB115A211DF560B00721F63 /* ASINetworkQueue.m in Sources */,
 				CCB115A911DF563100721F63 /* ASIAuthenticationDialog.m in Sources */,
 				CCB115AA11DF563100721F63 /* Reachability.m in Sources */,
+				CC26963C11E039D300A3E000 /* SFPhoto.m in Sources */,
+				CC2696A811E03ED400A3E000 /* SFCircule.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		CCB1121311DF17CB00721F63 /* PBXTargetDependency */ = {
+		CC26956B11E0108700A3E000 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "ObjectiveFlickr (library)";
-			targetProxy = CCB1121211DF17CB00721F63 /* PBXContainerItemProxy */;
+			targetProxy = CC26956A11E0108700A3E000 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -395,8 +415,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = ImageLocater_Prefix.pch;
 				HEADER_SEARCH_PATHS = (
-					"\"/Users/jiangqi/workspace/topcoder/objectiveflickr/Source\"",
-					"\"/Users/jiangqi/workspace/topcoder/objectiveflickr/LFWebAPIKit\"",
+					"\"../../objectiveflickr/Source\"",
+					"\"../../objectiveflickr/LFWebAPIKit\"",
 				);
 				INFOPLIST_FILE = "ImageLocater-Info.plist";
 				PRODUCT_NAME = ImageLocater;
@@ -411,8 +431,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = ImageLocater_Prefix.pch;
 				HEADER_SEARCH_PATHS = (
-					"\"/Users/jiangqi/workspace/topcoder/objectiveflickr/Source\"",
-					"\"/Users/jiangqi/workspace/topcoder/objectiveflickr/LFWebAPIKit\"",
+					"\"../../objectiveflickr/Source\"",
+					"\"../../objectiveflickr/LFWebAPIKit\"",
 				);
 				INFOPLIST_FILE = "ImageLocater-Info.plist";
 				PRODUCT_NAME = ImageLocater;

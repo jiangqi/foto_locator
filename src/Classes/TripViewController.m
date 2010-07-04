@@ -8,10 +8,16 @@
 
 #import "TripViewController.h"
 #import "ASIHTTPRequest.h"
+#import "SFPhoto.h"
+
+
+NSString *const TextContentKey = @"_text";
+
 
 
 @implementation TripViewController
 @synthesize tableView;
+@synthesize mapViewController;
 
 - (void)viewDidLoad {
 	[super viewDidLoad];
@@ -27,11 +33,14 @@
 
 
 - (void)dealloc {
+	[tableView release];
 	[super dealloc];
 }
 
+
 - (void)fetchData {
-	NSURL *url = [NSURL URLWithString:@"http://192.168.1.6:3000/circule.xml"];
+	
+	NSURL *url = [NSURL URLWithString:@"http://localhost:3000/circule.xml"];
     ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
 	[request setDelegate:self];
 	[request startAsynchronous];
@@ -41,74 +50,84 @@
 
 - (void)requestFinished:(ASIHTTPRequest *)request
 {
-	// Use when fetching text data
-	NSString *responseString = [request responseString];
-	
 	// Use when fetching binary data
 	NSData *responseData = [request responseData];
+	circules = [SFCircule alloc];
+	circules.siteList = [NSMutableArray array];
 	
 	NSXMLParser *parser = [[NSXMLParser alloc] initWithData:responseData];
 	[parser setDelegate:self];
 	[parser parse];
 	[parser release];
 	
-	listData = [currentDictionary valueForKeyPath:@"cirucles.circule"];
 	[self.tableView reloadData];
 }
 
 - (void)requestFailed:(ASIHTTPRequest *)request
 {
-	NSError *error = [request error];
+	//NSError *error = [request error];
 }
 
 - (void)parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName attributes:(NSDictionary *)attributeDict
 {
-	NSMutableDictionary *mutableAttrDict = attributeDict ? [NSMutableDictionary dictionaryWithDictionary:attributeDict] : [NSMutableDictionary dictionary];
-	
-	// see if it's duplicated
-	id element = [currentDictionary objectForKey:elementName];
-	if (element) {
-		if (![element isKindOfClass:[NSMutableArray class]]) {
-			if ([element isKindOfClass:[NSMutableDictionary class]]) {
-				[element retain];
-				[currentDictionary removeObjectForKey:elementName];
-				
-				NSMutableArray *newArray = [NSMutableArray arrayWithObject:element];
-				[currentDictionary setObject:newArray forKey:elementName];
-				[element release];
-				
-				element = newArray;
-			}
-			else {
-				
-			}
+	if ([elementName isEqualToString:@"circule"]) {
+		elementStack = [SFCircule alloc];
+		elementStack.siteList = [NSMutableArray array];
+		elementStack.circuleName = [attributeDict objectForKey:@"name"];
+		[circules.siteList addObject:elementStack];
+	} else if ([elementName isEqualToString:@"site"]) {
+		if (photoStack != nil) {
+			[photoStack release];
+		}
+		photoStack = [SFAnnotation alloc];
+		NSString *lat = [attributeDict objectForKey:@"latitude"];
+		NSString *lon = [attributeDict objectForKey:@"longitude"];
+		
+		NSNumberFormatter *f = [[NSNumberFormatter alloc]init];
+		[f setNumberStyle:NSNumberFormatterDecimalStyle];
+		double d = [[f numberFromString:lat] doubleValue];
+		[photoStack setLatitude:d];		
+		d = [[f numberFromString:lon] doubleValue];
+		[photoStack setLongitude:d];
+		[f release];
+		photoStack.imageURL = [NSMutableArray array];
+		
+		[elementStack.siteList addObject:photoStack];
+		
+		
+	} else if ([elementName isEqualToString:@"photo"]) {
+		if (photoStack == nil) {
+			return;
 		}
 		
-		[element addObject:mutableAttrDict];
-	}
-	else {
-		// plural tag rule: if the parent's tag is plural and the incoming is singular, we'll make it into an array (we only handles the -s case)
+		SFPhoto *photo = [SFPhoto alloc];
+		photo.takenTime = [attributeDict objectForKey:@"taken_time"];
+		photo.thumbnailUrl = [attributeDict objectForKey:@"thumbnail_url"];
+		photo.url = [attributeDict objectForKey:@"url"];
 		
-		if ([currentElementName length] > [elementName length] && [currentElementName hasPrefix:elementName] && [currentElementName hasSuffix:@"s"]) {
-			[currentDictionary setObject:[NSMutableArray arrayWithObject:mutableAttrDict] forKey:elementName];
-		}
-		else {
-			[currentDictionary setObject:mutableAttrDict forKey:elementName];
-		}
+		[photoStack.imageURL addObject:photo];
 	}
+
+}
+
+- (void)parser:(NSXMLParser *)parser didEndElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName
+{
+		
+}
+
+- (void)parser:(NSXMLParser *)parser foundCharacters:(NSString *)string
+{
 	
-	[elementStack insertObject:currentDictionary atIndex:0];
-	currentDictionary = mutableAttrDict;
-	NSString *tmp = currentElementName;
-	currentElementName = [elementName retain];
-	[tmp release];
+}
+
+- (void)parser:(NSXMLParser *)parser parseErrorOccurred:(NSError *)parseError
+{
+
 }
 
 // The number of rows is equal to the number of earthquakes in the array.
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-	
-	
-    return [elementStack count];
+	return [circules.siteList count];
 }
 
 // The cell uses a custom layout, but otherwise has standard behavior for UITableViewCell.
@@ -124,7 +143,7 @@
     UILabel *dateLabel = nil;
     
 	static NSString *ids = @"Circule";    
-  	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ids];
+  	UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:ids];
 	if (cell == nil) {
         // No reusable cell was available, so we create a new cell and configure its subviews.
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
@@ -141,13 +160,9 @@
         dateLabel = (UILabel *)[cell.contentView viewWithTag:kDateLabelTag];
     }
     
-    // Get the specific earthquake for this row.
-	NSArray *array = [currentDictionary valueForKeyPath:@"circules.circule"];
-	NSDictionary *circule = [array objectAtIndex:indexPath.row];
-    
+    SFCircule *circule = [circules.siteList objectAtIndex:indexPath.row];
     // Set the relevant data for each subview in the cell.
-    dateLabel.text = [circule valueForKey:@"name"];
-	
+    dateLabel.text = circule.circuleName;	
 	return cell;
 }
 
@@ -156,17 +171,32 @@
 //
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {	
     UIActionSheet *sheet =
-	[[UIActionSheet alloc] initWithTitle:
-	 NSLocalizedString(@"External App Sheet Title",
-					   @"Title for sheet displayed with options for displaying Earthquake data in other applications")
-								delegate:self
-					   cancelButtonTitle:NSLocalizedString(@"Cancel", @"Cancel")
-				  destructiveButtonTitle:nil
-					   otherButtonTitles:NSLocalizedString(@"Show USGS Site in Safari", @"Show USGS Site in Safari"),
-	 NSLocalizedString(@"Show Location in Maps", @"Show Location in Maps"),
-	 nil];
+			[[UIActionSheet alloc] initWithTitle:
+					NSLocalizedString(@"What to do with the trip?",
+									 @"Please select view a trip or remove it")
+					delegate:self
+					cancelButtonTitle:NSLocalizedString(@"Cancel", @"Cancel")
+					destructiveButtonTitle:nil
+					otherButtonTitles:NSLocalizedString(@"Show Trip in Map", @"Show Trip in Map"),
+								      NSLocalizedString(@"Remove Trip", @"RemoveTrip"),
+				nil];
     [sheet showInView:self.view];
     [sheet release];
+}
+
+- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
+	NSIndexPath *selectedIndexPath = [self.tableView indexPathForSelectedRow];
+	if (buttonIndex == 1) {
+		// Remove
+		[circules.siteList removeObjectAtIndex:selectedIndexPath.row];
+		[self.tableView reloadData];
+	} else {
+		// View;
+		SFCircule *circule = [circules.siteList objectAtIndex:selectedIndexPath.row];
+		[self.mapViewController pushAnnotation:circule.siteList];
+		[self.navigationController setToolbarHidden:YES animated:NO];
+		[self.navigationController pushViewController:self.mapViewController animated:YES];
+	}
 }
 
 @end

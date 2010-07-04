@@ -15,6 +15,13 @@
 	ImageViewController *imageViewController;
     NSMutableArray *mapAnnotations;
 	UIPopoverController *popOverController;
+	
+@private
+	NSMutableArray *siteList;
+	double minLat;
+	double maxLat;
+	double minLon;
+	double maxLon;
 }
 
 @property (nonatomic, retain) IBOutlet MKMapView *mapView;
@@ -25,7 +32,6 @@
 + (CGFloat)annotationPadding;
 + (CGFloat)calloutHeight;
 
-- (IBAction)cityAction:(id)sender;
-- (IBAction)bridgeAction:(id)sender;
-- (IBAction)allAction:(id)sender;
+
+- (void)pushAnnotation:(NSMutableArray *)list;
 @end

@@ -1,0 +1,3 @@
+/Users/jiangqi/workspace/topcoder/foto_locator/src/Classes/SFCircule.m:14: error: no declaration of property 'circuleName' found in the interface
+/Users/jiangqi/workspace/topcoder/foto_locator/src/Classes/SFCircule.m:16: warning: property 'name' requires method '-name' to be defined - use @synthesize, @dynamic or provide a method implementation
+/Users/jiangqi/workspace/topcoder/foto_locator/src/Classes/SFCircule.m:16: warning: property 'name' requires the method 'setName:' to be defined - use @synthesize, @dynamic or provide a method implementation

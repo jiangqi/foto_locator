@@ -7,25 +7,25 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SFAnnotation.h"
+#import "SFCircule.h"
+#import "MapViewController.h"
 
-
-@interface TripViewController : UIViewController <UITableViewDelegate, UITableViewDataSource> {
+@interface TripViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, UIActionSheetDelegate> {
 	
-	NSMutableArray *listData;
 	UITableView *tableView;
 	
-@private
-    // for downloading the xml data
-    
-	NSMutableDictionary *currentDictionary;
+	MapViewController *mapViewController;
 	
-	NSString *currentElementName;
-	NSMutableArray *elementStack;
+@private
+	SFCircule *elementStack;
+	SFAnnotation *photoStack;
+	SFCircule *circules;
+
 }
 
-@property (nonatomic, retain) IBOutlet NSMutableData *listData;
-
 @property (nonatomic, retain) IBOutlet UITableView *tableView;
+@property (nonatomic, retain) IBOutlet MapViewController *mapViewController;
 
 - (void)fetchData;
 
